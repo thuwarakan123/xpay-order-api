@@ -26,7 +26,6 @@ npm install
 ```
 
 ### **3️⃣ Run the Application**
-```
 For run application:
 ```sh
 npm start
