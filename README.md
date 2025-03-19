@@ -26,11 +26,8 @@ npm install
 ```
 
 ### **3️⃣ Run the Application**
-For development mode (with automatic restarts):
-```sh
-npm run dev
 ```
-For production mode:
+For run application:
 ```sh
 npm start
 ```
@@ -48,9 +45,8 @@ xpay-order-api/
     👉 models/            # (Future: Define models if needed)
     👉 routes/            # API route definitions
     👉 services/          # Business logic (orders, inventory, etc.)
-    👉 middleware/        # Middleware (error handling, etc.)
+    👉 middleware/        # (Future: error handling, etc.)
     👉 utils/             # Helper functions (queue management)
-    👉 app.js             # Express app setup
     👉 server.js          # Server entry point
 👉 config/
     👉 products.json      # Predefined product list
@@ -69,7 +65,7 @@ xpay-order-api/
 **Request Body Example:**
 ```json
 {
-  "customer": "John Doe",
+  "customer": "Thuwarakan Jeyakumar",
   "products": [{"id": "p1", "quantity": 2}]
 }
 ```
@@ -80,7 +76,7 @@ xpay-order-api/
   "message": "Order added to the queue successfully.",
   "data": {
     "id": "1234-uuid",
-    "customer": "John Doe",
+    "customer": "Thuwarakan Jeyakumar",
     "products": [{"id": "p1", "quantity": 2}],
     "status": "pending"
   }
